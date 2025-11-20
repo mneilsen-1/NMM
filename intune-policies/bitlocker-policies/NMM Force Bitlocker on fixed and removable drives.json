@@ -1,8 +1,6 @@
 {
     "_wap_tags": "Endpoint Security",
-    "createdDateTime": "2025-11-17T07:13:52.9474186+00:00",
     "description": "This policy enables BitLocker to fully encrypt fixed OS, data disks and removable disks based on AES 128-bit XTS. Keys will be stored in Azure AD and client-driven key rotation will be enabled.",
-    "lastModifiedDateTime": "2025-11-17T07:13:52.9474186+00:00",
     "name": "NMM Force Bitlocker on Fixed and Removable Drives",
     "platforms": "windows10",
     "roleScopeTagIds": [
