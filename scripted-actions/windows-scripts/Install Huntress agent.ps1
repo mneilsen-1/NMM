@@ -16,12 +16,12 @@ Set these up in Nerdio Manager under Settings->Integrations. The variables to cr
 ##### Required Variables #####
 
 $AccountKey = $SecureVars.HuntressAccountKey
-$OrganizationKey =  $SecureVars.HuntressOrgKey
+$OrganizationKey = $SecureVars.HuntressOrgKey
 
 ##### Script Logic #####
 
-if(($AccountKey -eq $null) -or ($OrganizationKey -eq $null)) {
-    Write-Output "ERROR: The secure variables HuntressAccountKey and HuntressOrgKey are not provided"
+if([string]::IsNullOrWhiteSpace($AccountKey) -or [string]::IsNullOrWhiteSpace($OrganizationKey)){
+    Write-Output "ERROR: The secure variables HuntressAccountKey or HuntressOrgKey are not provided"
 }
 
 else {    
