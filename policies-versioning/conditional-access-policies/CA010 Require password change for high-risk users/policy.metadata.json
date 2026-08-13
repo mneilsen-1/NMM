@@ -1,3 +1,11 @@
 {
-  "tags": ["Zero Trust", "Remote work"]
+  "tags": [
+    "Zero Trust",
+    "Remote work"
+  ],
+  "versions": {
+    "1.0.1": {
+      "changeLog": "Updated to remain compatible with the latest Microsoft changes. No functional changes. Resolves the mismatch status."
+    }
+  }
 }

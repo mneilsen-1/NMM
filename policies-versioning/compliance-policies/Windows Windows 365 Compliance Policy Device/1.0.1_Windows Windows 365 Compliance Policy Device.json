@@ -1,0 +1,44 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+  "description": "Compliance policy for Windows 365 Cloud PCs (for feature that are not supported, e.g. BitLocker). Target All Devices with a filter that includes \u0027Windows-Windows365\u0027.",
+  "displayName": "Windows Windows 365 Compliance Policy Device",
+  "scheduledActionsForRule": [
+    {
+      "scheduledActionConfigurations": [
+        {
+          "actionType": "block",
+          "gracePeriodHours": 0,
+          "notificationMessageCCList": [],
+          "notificationTemplateId": "00000000-0000-0000-0000-000000000000"
+        }
+      ]
+    }
+  ],
+  "activeFirewallRequired": true,
+  "antiSpywareRequired": true,
+  "antivirusRequired": true,
+  "bitLockerEnabled": false,
+  "codeIntegrityEnabled": false,
+  "configurationManagerComplianceRequired": false,
+  "defenderEnabled": true,
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "earlyLaunchAntiMalwareDriverEnabled": false,
+  "firmwareProtectionEnabled": false,
+  "kernelDmaProtectionEnabled": false,
+  "memoryIntegrityEnabled": false,
+  "osMinimumVersion": "10.0.19045",
+  "passwordBlockSimple": false,
+  "passwordRequired": false,
+  "passwordRequiredToUnlockFromIdle": false,
+  "passwordRequiredType": "deviceDefault",
+  "requireHealthyDeviceReport": false,
+  "rtpEnabled": true,
+  "secureBootEnabled": false,
+  "signatureOutOfDate": true,
+  "storageRequireEncryption": false,
+  "tpmRequired": false,
+  "validOperatingSystemBuildRanges": [],
+  "virtualizationBasedSecurityEnabled": false,
+  "wslDistributions": []
+}

@@ -1,0 +1,26 @@
+{
+  "description": "VBS (Virtualization-based security): VBS must be enabled to ensure secure installation of Hotpatch updates.",
+  "name": "Windows Windows Autopatch baseline settings",
+  "platforms": "windows10",
+  "settingCount": 1,
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "settingDefinitionId": "device_vendor_msft_policy_config_virtualizationbasedtechnology_hypervisorenforcedcodeintegrity",
+        "choiceSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+          "children": [],
+          "value": "device_vendor_msft_policy_config_virtualizationbasedtechnology_hypervisorenforcedcodeintegrity_2"
+        },
+        "auditRuleInformation": null
+      }
+    }
+  ],
+  "technologies": "mdm",
+  "templateReference": {
+    "templateFamily": "none",
+    "templateId": ""
+  }
+}

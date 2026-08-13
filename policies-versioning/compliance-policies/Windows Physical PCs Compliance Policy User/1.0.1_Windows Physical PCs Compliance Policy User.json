@@ -1,0 +1,44 @@
+{
+  "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
+  "description": "User-based Windows compliance policy that applies to all default scenarios including physical Windows PCs.",
+  "displayName": "Windows Physical PCs Compliance Policy User",
+  "scheduledActionsForRule": [
+    {
+      "scheduledActionConfigurations": [
+        {
+          "actionType": "block",
+          "gracePeriodHours": 24,
+          "notificationMessageCCList": [],
+          "notificationTemplateId": "00000000-0000-0000-0000-000000000000"
+        }
+      ]
+    }
+  ],
+  "activeFirewallRequired": true,
+  "antiSpywareRequired": true,
+  "antivirusRequired": true,
+  "bitLockerEnabled": true,
+  "codeIntegrityEnabled": true,
+  "configurationManagerComplianceRequired": false,
+  "defenderEnabled": true,
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "earlyLaunchAntiMalwareDriverEnabled": false,
+  "firmwareProtectionEnabled": false,
+  "kernelDmaProtectionEnabled": false,
+  "memoryIntegrityEnabled": false,
+  "osMinimumVersion": "10.0.19045",
+  "passwordBlockSimple": false,
+  "passwordRequired": false,
+  "passwordRequiredToUnlockFromIdle": false,
+  "passwordRequiredType": "deviceDefault",
+  "requireHealthyDeviceReport": false,
+  "rtpEnabled": true,
+  "secureBootEnabled": true,
+  "signatureOutOfDate": true,
+  "storageRequireEncryption": false,
+  "tpmRequired": true,
+  "validOperatingSystemBuildRanges": [],
+  "virtualizationBasedSecurityEnabled": false,
+  "wslDistributions": []
+}

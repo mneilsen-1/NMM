@@ -1,0 +1,76 @@
+{
+  "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
+  "description": "Enable Entra ID single sign-on",
+  "displayName": "macOS Enable EntraID SSO Device",
+  "airPrintDestinations": [],
+  "adminShowHostInfo": false,
+  "appAssociatedDomains": [],
+  "associatedDomains": [],
+  "authorizedUsersListHidden": false,
+  "authorizedUsersListHideAdminUsers": false,
+  "authorizedUsersListHideLocalUsers": false,
+  "authorizedUsersListHideMobileAccounts": false,
+  "authorizedUsersListIncludeNetworkUsers": false,
+  "authorizedUsersListShowOtherManagedUsers": false,
+  "autoLaunchItems": [],
+  "consoleAccessDisabled": false,
+  "contentCachingBlockDeletion": false,
+  "contentCachingClientListenRanges": [],
+  "contentCachingClientPolicy": "notConfigured",
+  "contentCachingDisableConnectionSharing": false,
+  "contentCachingEnabled": false,
+  "contentCachingForceConnectionSharing": false,
+  "contentCachingKeepAwake": false,
+  "contentCachingLogClientIdentities": false,
+  "contentCachingMaxSizeBytes": 0,
+  "contentCachingParents": [],
+  "contentCachingParentSelectionPolicy": "notConfigured",
+  "contentCachingPeerFilterRanges": [],
+  "contentCachingPeerListenRanges": [],
+  "contentCachingPeerPolicy": "notConfigured",
+  "contentCachingPort": 0,
+  "contentCachingPublicRanges": [],
+  "contentCachingShowAlerts": false,
+  "contentCachingType": "notConfigured",
+  "logOutDisabledWhileLoggedIn": false,
+  "macOSSingleSignOnExtension": {
+    "@odata.type": "#microsoft.graph.macOSAzureAdSingleSignOnExtension",
+    "bundleIdAccessControlList": [
+      "com.microsoft.edgemac",
+      "com.Microsoft.Word",
+      "com.Microsoft.Excel",
+      "com.Microsoft.Powerpoint",
+      "com.Microsoft.Outlook",
+      "com.microsoft.OneDrive-mac",
+      "com.microsoft.teams",
+      "com.microsoft.onenote.mac",
+      "com.microsoft.to-do-mac",
+      "com.microsoft.rdc.macos"
+    ],
+    "configurations": [
+      {
+        "key": "browser_sso_interaction_enabled",
+        "@odata.type": "#microsoft.graph.keyIntegerValuePair",
+        "value": 1
+      },
+      {
+        "key": "disable_explicit_app_prompt",
+        "@odata.type": "#microsoft.graph.keyIntegerValuePair",
+        "value": 1
+      },
+      {
+        "key": "AppPrefixAllowList",
+        "@odata.type": "#microsoft.graph.keyStringValuePair",
+        "value": "com.microsoft.,com.apple."
+      }
+    ],
+    "enableSharedDeviceMode": false
+  },
+  "powerOffDisabledWhileLoggedIn": false,
+  "restartDisabled": false,
+  "restartDisabledWhileLoggedIn": false,
+  "screenLockDisableImmediate": false,
+  "shutDownDisabled": false,
+  "shutDownDisabledWhileLoggedIn": false,
+  "sleepDisabled": false
+}

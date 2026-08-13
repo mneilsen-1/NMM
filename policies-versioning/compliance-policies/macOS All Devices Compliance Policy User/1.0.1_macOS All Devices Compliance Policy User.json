@@ -1,0 +1,30 @@
+{
+  "@odata.type": "#microsoft.graph.macOSCompliancePolicy",
+  "description": "Compliance policy for all macOS devices. Apply by default to All Users. Note - changing the device password requirements will force a password change on all existing devices that have received this policy",
+  "displayName": "macOS All Devices Compliance Policy User",
+  "scheduledActionsForRule": [
+    {
+      "scheduledActionConfigurations": [
+        {
+          "actionType": "block",
+          "gracePeriodHours": 0,
+          "notificationMessageCCList": [],
+          "notificationTemplateId": "00000000-0000-0000-0000-000000000000"
+        }
+      ]
+    }
+  ],
+  "advancedThreatProtectionRequiredSecurityLevel": "unavailable",
+  "deviceThreatProtectionEnabled": false,
+  "deviceThreatProtectionRequiredSecurityLevel": "unavailable",
+  "firewallBlockAllIncoming": false,
+  "firewallEnabled": false,
+  "firewallEnableStealthMode": false,
+  "gatekeeperAllowedAppSource": "macAppStoreAndIdentifiedDevelopers",
+  "osMinimumVersion": "14.7.8",
+  "passwordBlockSimple": false,
+  "passwordRequired": false,
+  "passwordRequiredType": "deviceDefault",
+  "storageRequireEncryption": true,
+  "systemIntegrityProtectionEnabled": true
+}

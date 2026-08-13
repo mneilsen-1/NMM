@@ -1,0 +1,37 @@
+{
+  "description": "Change the default Windows wallpaper to a custom wallpaper. You can clone and change the URL to point to an image of your choice.",
+  "name": "Windows Force Desktop Wallpaper User",
+  "platforms": "windows10",
+  "settingCount": 2,
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+        "settingDefinitionId": "vendor_msft_personalization_desktopimageurl",
+        "simpleSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "value": "https://msdesign.blob.core.windows.net/wallpapers/Microsoft_Nostalic_Clippy_4k.jpg"
+        },
+        "auditRuleInformation": null
+      }
+    },
+    {
+      "id": "1",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+        "settingDefinitionId": "vendor_msft_personalization_lockscreenimageurl",
+        "simpleSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "value": "https://msdesign.blob.core.windows.net/wallpapers/Microsoft_Nostalic_Clippy_4k.jpg"
+        },
+        "auditRuleInformation": null
+      }
+    }
+  ],
+  "technologies": "mdm",
+  "templateReference": {
+    "templateFamily": "none",
+    "templateId": ""
+  }
+}
